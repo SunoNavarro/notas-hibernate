@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-27T17:04:59.022Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="OvTeO9Sz1AZOtdbUyxwQ" version="21.6.5" type="gitlab">
+<mxfile host="app.diagrams.net" modified="2023-07-27T17:21:19.149Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="QJp_wEB1D5AfmmIQ4_nO" version="21.6.5" type="gitlab">
   <diagram name="Page-1" id="7lAIiiJx6JvmHaxcug1v">
     <mxGraphModel dx="1185" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -73,7 +73,7 @@
         <mxCell id="TRdgLWMIIoHeJco8LYhk-20" value="Servicio 3" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="545" y="2120" width="80" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="TRdgLWMIIoHeJco8LYhk-21" value="&lt;div&gt;&lt;b&gt;Proyecto notas.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Se desea crear un programa que permita registrar los datos básicos de los estudiantes y las materias para posteriormente registra la nota que alcanza cada estudiante en la materias que tenga matriculadas.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;RF1: Permite registrar estudiantes[nombre completo, dni, correo, telefono, contraseña]&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;RF2: Permite materias [codigo, nombre, descripcion]&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;RF3: Permite registrar calificación [estudiantes, materias, nota]&amp;nbsp;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="TRdgLWMIIoHeJco8LYhk-21" value="&lt;div&gt;&lt;b&gt;Proyecto notas.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Se desea crear un programa que permita registrar los datos básicos de los estudiantes y las materias para posteriormente registrar la nota que alcanza cada estudiante en la materias que tenga matriculadas.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;RF1: Permite registrar estudiantes[nombre completo, dni, correo, telefono, contraseña]&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;RF2: Permite materias [codigo, nombre, descripcion]&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;RF3: Permite registrar calificación [estudiantes, materias, nota]&amp;nbsp;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="90" y="1450" width="580" height="140" as="geometry" />
         </mxCell>
         <mxCell id="TRdgLWMIIoHeJco8LYhk-22" value="estudiante" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
@@ -139,7 +139,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TRdgLWMIIoHeJco8LYhk-37" value="telefono VARCHAR(50)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="TRdgLWMIIoHeJco8LYhk-35">
+        <mxCell id="TRdgLWMIIoHeJco8LYhk-37" value="telefono VARCHAR(20)" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="TRdgLWMIIoHeJco8LYhk-35">
           <mxGeometry x="30" width="210" height="30" as="geometry">
             <mxRectangle width="210" height="30" as="alternateBounds" />
           </mxGeometry>
