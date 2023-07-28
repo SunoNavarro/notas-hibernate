@@ -14,9 +14,9 @@ public class Estudiante {
     private Long id;
     @Column(name = "nombre_completo", length = 50)
     private String nombreCompleto;
-    @Column(name = "dni", length = 12)
+    @Column(name = "dni", length = 12, unique = true)
     private String dni;
-    @Column(name = "correo", length = 50)
+    @Column(name = "correo", length = 50, unique = true)
     private String correo;
     @Column(name = "telefono", length = 20)
     private String telefono;

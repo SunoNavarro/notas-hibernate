@@ -6,6 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Column;
 import javax.persistence.GenerationType;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "materia")
@@ -14,7 +15,7 @@ public class Materia {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "codigo", length = 50)
+    @Column(name = "codigo", length = 50, nullable = false, unique = true)
     private String codigo;
 
     @Column(name = "materia", length = 50)
