@@ -1,4 +1,5 @@
 package com.hackaboss.nota.Service;
+
 import com.hackaboss.nota.Entity.Estudiante;
 import com.hackaboss.nota.IRepository.IEstudianteRepository;
 import com.hackaboss.nota.IService.IEstudianteService;
@@ -25,26 +26,42 @@ public class EstudianteService implements IEstudianteService {
 
     @Override
     public Estudiante save(Estudiante estudiante) {
-        return null;
+        return repository.save(estudiante);
     }
 
     @Override
     public void update(Long id, Estudiante estudiante) {
+        //op es el objeto que va validar si existe un registro con el id que llega por parametro [id]
+        Optional<Estudiante> op = repository.findById(id);
 
+        if(op.isEmpty()){
+            System.out.println("Dato no encontrado");
+        }else{
+            //Crear nuevo objeto que va a contener los datos que se van actualizar
+            Estudiante estudianteUpdate = op.get();
+            estudianteUpdate.setNombreCompleto(estudiante.getNombreCompleto());
+            estudianteUpdate.setDni(estudiante.getDni());
+            estudianteUpdate.setCorreo(estudiante.getCorreo());
+            estudianteUpdate.setTelefono(estudiante.getTelefono());
+            estudianteUpdate.setContrasenia(estudiante.getContrasenia());
+
+            //Actualizar el objeto
+            repository.save(estudianteUpdate);
+        }
     }
 
     @Override
     public void delete(Long id) {
-
+        repository.deleteById(id);
     }
 
     @Override
     public List<Estudiante> findOrderByNameStudent() {
-        return null;
+        return repository.findOrderByNameStudent();
     }
 
     @Override
-    public List<Estudiante> findListByNameStudent() {
-        return null;
+    public List<Estudiante> findListByNameStudent(String nameStudent) {
+        return repository.findListByNameStudent(nameStudent);
     }
 }
