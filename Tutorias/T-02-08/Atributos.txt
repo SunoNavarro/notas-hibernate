@@ -1,0 +1,8 @@
+double promedio;
+double matematica;
+double logica;
+double prograJava;
+
+double valorSemestre = 1500.0;
+double valorPagar;
+String nombre;
