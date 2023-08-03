@@ -32,7 +32,7 @@ public class EstudianteController {
     }
 
     @PutMapping("{id}")
-    @ResponseStatus(code = HttpStatus.CREATED)
+    @ResponseStatus(code = HttpStatus.NO_CONTENT)
     public void update(@PathVariable Long id, @RequestBody Estudiante estudiante) {
         service.update(id, estudiante);
     }
