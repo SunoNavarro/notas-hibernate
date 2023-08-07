@@ -26,7 +26,7 @@ public interface IMateriaService {
     /**
      **Método encargado de modificar los datos del registro
      ***/
-    void update(Long id, Materia materia);
+     Materia update(Long id, Materia materia);
 
     /**
      **Método encargado de eliminar un registro
