@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "42cc290a-e34d-4fd7-a37f-9a6e208fc97c",
+		"_postman_id": "a15d84df-b66b-4b66-8156-5c992e45bf67",
 		"name": "HackABoss-Nota",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "23645116",
-		"_collection_link": "https://interstellar-satellite-548666.postman.co/workspace/SGSST~f468340a-d76e-41ed-a7ec-2eef913bc7e6/collection/23645116-42cc290a-e34d-4fd7-a37f-9a6e208fc97c?action=share&creator=23645116&source=collection_link"
+		"_exporter_id": "28656552"
 	},
 	"item": [
 		{
@@ -46,35 +45,6 @@
 								"api",
 								"Estudiante",
 								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "save",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n   \"nombreCompleto\":\"María Camila Peréz\",\r\n   \"dni\":\"23784297\",\r\n   \"correo\":\"camila@hackaboss.com\",\r\n   \"telefono\":\"321234324\",\r\n   \"contrasenia\":\"qwerty\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:9000/api/Estudiante",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9000",
-							"path": [
-								"api",
-								"Estudiante"
 							]
 						}
 					},
@@ -130,12 +100,163 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"nombreCompleto\":\"María Camila Peréz\",\r\n   \"dni\":\"23784297\",\r\n   \"correo\":\"camila@hackaboss.com\",\r\n   \"telefono\":\"321234324\",\r\n   \"contrasenia\":\"qwerty\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/Estudiante",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"Estudiante"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
 		{
 			"name": "Materia",
-			"item": []
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/Estudiante",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"Estudiante"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/materia/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"materia",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"codigo\":\"Matematicas\",\r\n   \"materia\":\"Matematicas\",\r\n   \"descripcion\":\"Matematicas muy bonitas\"\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/materia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"materia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"codigo\":\"Matematicas\",\r\n   \"materia\":\"Matematicas\",\r\n   \"descripcion\":\"Matematicas muy bonitas\"\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/materia/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"materia",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/Estudiante/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"Estudiante",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
