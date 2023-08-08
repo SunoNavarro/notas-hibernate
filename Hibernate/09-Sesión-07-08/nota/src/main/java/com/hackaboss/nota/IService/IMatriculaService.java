@@ -25,7 +25,7 @@ public interface IMatriculaService {
     /**
      **Método encargado de modificar los datos del registro
      ***/
-    void update(Long id, Matricula matricula);
+    Matricula update(Long id, Matricula matricula);
 
     /**
      **Método encargado de eliminar un registro
